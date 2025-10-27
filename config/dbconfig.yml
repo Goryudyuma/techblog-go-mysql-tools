@@ -1,0 +1,10 @@
+local:
+  dialect: mysql
+  datasource: root:root@tcp(127.0.0.1:3306)/test_service?parseTime=true
+  dir: migrations
+  table: gorp_migrations
+ci:
+  dialect: mysql
+  datasource: root@tcp(127.0.0.1:3306)/test_service?parseTime=true
+  dir: migrations
+  table: gorp_migrations

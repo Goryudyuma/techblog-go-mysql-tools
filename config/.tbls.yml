@@ -1,0 +1,32 @@
+# .tbls.yml
+
+dsn: mysql://root:root@127.0.0.1:3306/test_service
+docPath: docs/schema
+disableOutputSchema: true
+lint:
+  requireColumns:
+    enabled: true
+    columns:
+      - name: created_at
+        exclude:
+          - gorp_migrations
+      - name: updated_at
+        exclude:
+          - gorp_migrations
+  # カラムコメントが必要
+  requireColumnComment:
+    enabled: true
+    exclude:
+      - created_at
+      - updated_at
+    excludeTables:
+      - gorp_migrations
+  # 重複するリレーションのチェック
+  duplicateRelations:
+    enabled: true
+  # 外部キーのカラムにインデックスがあるかチェック
+  requireForeignKeyIndex:
+    enabled: true
+er:
+  comment: true
+  format: mermaid
