@@ -5,6 +5,7 @@
 | Name | Columns | Comment | Type |
 | ---- | ------- | ------- | ---- |
 | [gorp_migrations](gorp_migrations.md) | 2 |  | BASE TABLE |
+| [items](items.md) | 3 |  | BASE TABLE |
 | [users](users.md) | 4 |  | BASE TABLE |
 
 ## Relations
@@ -16,6 +17,11 @@ erDiagram
 "gorp_migrations" {
   varchar_255_ id PK ""
   datetime applied_at ""
+}
+"items" {
+  varchar_36_ id PK "itemID"
+  datetime_6_ created_at ""
+  datetime_6_ updated_at ""
 }
 "users" {
   varchar_36_ id PK "ユーザーID"
