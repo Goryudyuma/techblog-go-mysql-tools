@@ -229,3 +229,5 @@ require (
 	gorm.io/plugin/dbresolver v1.6.2 // indirect
 	gotest.tools/gotestsum v1.8.2 // indirect
 )
+
+replace github.com/Goryudyuma/techblog-go-mysql-tools => ../techblog-go-mysql-tools
