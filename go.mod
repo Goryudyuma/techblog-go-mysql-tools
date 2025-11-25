@@ -9,6 +9,7 @@ tool (
 )
 
 require (
+	github.com/Goryudyuma/techblog-go-mysql-tools/pkg/publicType v0.0.0-20251027211301-b4d933160724
 	github.com/go-sql-driver/mysql v1.9.3
 	gorm.io/driver/mysql v1.6.0
 	gorm.io/gen v0.3.27
@@ -229,3 +230,5 @@ require (
 	gorm.io/plugin/dbresolver v1.6.2 // indirect
 	gotest.tools/gotestsum v1.8.2 // indirect
 )
+
+replace github.com/Goryudyuma/techblog-go-mysql-tools => ../techblog-go-mysql-tools
