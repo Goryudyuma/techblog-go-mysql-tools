@@ -9,6 +9,7 @@ tool (
 )
 
 require (
+	github.com/Goryudyuma/techblog-go-mysql-tools/pkg/publicType v0.0.0-20251027211301-b4d933160724
 	github.com/go-sql-driver/mysql v1.9.3
 	gorm.io/driver/mysql v1.6.0
 	gorm.io/gen v0.3.27
